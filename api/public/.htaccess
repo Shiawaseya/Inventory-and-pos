@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Remove the public/ folder from URLs
+    RewriteBase /inventory_management_api/public/
+    
+    # Allow direct access to existing files and directories
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+    # Rewrite all other requests to index.php
+    RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>

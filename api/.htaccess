@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /inventory_management_api/
+
+    # Let /public/* continue to be handled by public/.htaccess
+    RewriteCond %{REQUEST_URI} ^/inventory_management_api/public/ [NC]
+    RewriteRule ^ - [L]
+
+    # Route all non-existing files/directories through root index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.php [QSA,L]
+</IfModule>

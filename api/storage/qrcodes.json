@@ -1,0 +1,19 @@
+[
+    {
+        "id": "qr_ff5f50300ef0a926",
+        "code": "0A65C521E70E",
+        "data": {
+            "type": "signup",
+            "metadata": {
+                "generated_at": "2026-03-04T01:25:32.187Z"
+            }
+        },
+        "created_by": "admin",
+        "created_at": "2026-03-04T02:25:32+01:00",
+        "expires_at": null,
+        "metadata": {
+            "generated_at": "2026-03-04T01:25:32.187Z"
+        },
+        "status": "active"
+    }
+]
